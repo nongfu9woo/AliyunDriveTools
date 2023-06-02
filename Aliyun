@@ -11,8 +11,8 @@ import java.net.http.HttpResponse;
 public class Aliyun {
     private static void main(String[] args) throws IOException, InterruptedException {
         // 获取refresh_token并填入
-        String token = "";
-        String access_token = updateToken(token);
+        String refresh_token = "";
+        String access_token = updateToken(refresh_token);
         dailyCheck(access_token);
 
         if (access_token != null) {
